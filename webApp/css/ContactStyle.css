@@ -1,0 +1,109 @@
+#body {
+    background-color: white;
+	height: 100%;
+    width: 100%;
+}
+
+
+#header{
+	font-size: 35px;
+	font-weight: bold;
+	text-transform:uppercase;
+    padding: 1em;
+    color: white;
+    background-color: #263240;
+    text-align: center;
+	width: 100%;
+}
+
+
+#footer {
+	font-size: 18px;
+    padding: 1em;
+    color: white;
+    background-color: #263240;
+    text-align: center;
+	width: 97%;
+	margin: auto;
+    overflow: hidden;
+}
+
+
+#container {
+    height: 100%;
+    width: 100%;
+    background: white;
+}
+
+h1 {
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+}
+
+h2 {
+	
+	font-size: 15px;
+	font-weight: bold;
+	text-align: left;
+
+}
+
+ul.sq {
+    list-style-type: square;
+}
+
+p {
+	text-align: left;
+}
+
+
+
+ul.a {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #263240;
+    top: 200;
+    width: 100%;
+}
+
+li.a:nth-of-type(6) {
+	float: right;
+}
+
+li.a:nth-of-type(7) {
+	float: right;
+}
+
+
+li.a {
+    float: left;
+}
+
+li.a a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li.a a:hover {
+    background-color: #111;
+}
+
+h3 {
+    text-transform:uppercase;
+    font-size : 14px;
+    color : white;
+}
+
+.copyright {
+    float: left;
+}
+
+.design {
+    float: right;
+}
