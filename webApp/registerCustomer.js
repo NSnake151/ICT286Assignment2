@@ -21,12 +21,17 @@ function registerCustomer()
 			if(xhr.responseText == 1)
 			{
 				//confirm success
-				window.alert("True");
+				window.alert("You have been registered.");
+			}
+			else
+			if(xhr.responseText == 0)
+			{
+				//request repeat
+				window.alert("Choose another username");
 			}
 			else
 			{
-				//request repeat
-				window.alert("False");
+				window.alert("There was an unexpected problem with the server. Try again");
 			}
 
 		}
