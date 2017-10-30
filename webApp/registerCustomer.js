@@ -1,49 +1,22 @@
-function registerCustomer()
+function validateRegister()
 {
-	//window.alert("In registerCustomer");
-
-	var xhr = new XMLHttpRequest();
-
+	window.alert("hello. in validateregister");
 	var username = document.getElementById("username").value;
-	xhr.open('GET', 'http://ceto.murdoch.edu.au/~31873958/submission2/Assignment2/registerCustomer/registerCustomer.php?username' + username, true);
+	var password = document.getElementById("password").value;
+	var confpassword = document.getElementById("confpassword").value;
+	var email = document.getElementById("email").value;
+	var name = document.getElementById("name").value;
 
-	xhr.responseType = 'text';
-	xhr.onreadystatechange = function()
+	if(username == "" || password == "" || confpassword == "" || email == "" || name == "")
 	{
-		window.alert("In callback: readyState ==" + xhr.readyState + " xhr.status == " + xhr.status);
-		
-		
-		if(xhr.readyState == 4 && xhr.status == 200)
-		{	
-						
-			
-			window.alert(xhr.responseText);
-			if(xhr.responseText == 1)
-			{
-				//confirm success
-				window.alert("You have been registered.");
-			}
-			else
-			if(xhr.responseText == 0)
-			{
-				//request repeat
-				window.alert("Choose another username");
-			}
-			else
-			{
-				window.alert("There was an unexpected problem with the server. Try again");
-			}
-
-		}
-
-		//window.alert("after if block");
-
+		window.alert("Please fill in all fields");
+		return false;
 	}
-
-	//window.alert("End of callback");
+	if(password != confpassword)
+	{
+		window.alert("The two passwords do not match");
+		return false;
+	}
 	
-	xhr.send(null);
-	
-
-
+	return false;
 }

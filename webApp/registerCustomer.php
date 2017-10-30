@@ -37,11 +37,9 @@
 	
 	if($isValid == 1)
 	{
-		//$query = "INSERT INTO Person VALUES('".$name."','".$password."','".$username."',".$email.",0)";
-
+		
 		$query = "INSERT INTO Person VALUES('$name', '$password', '$username', '$email', 0)";
 
-		//$query = "INSERT INTO Person VALUES('testname', 'testpassword', 'testu2', 'testemail', 0)";
 		$retval = mysql_query($query);
 		$message = "You have been registered";
 		if(! $retval)

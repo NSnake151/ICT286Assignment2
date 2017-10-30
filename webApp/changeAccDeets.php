@@ -5,18 +5,40 @@
 	$dbc = mysql_pconnect($host, $user, $password);
 	$dbname = "X31873958";	
 	mysql_select_db($dbname);
+	$username;
+	$message;
+	$newpassword = $_POST["password"];
+		//if they haven't tried to login		
+	if(isset($_COOKIE["login"]))
+	{
+			//if they failed to login
+		if($_COOKIE["login"] != "false")
+		{
+			$username = $_COOKIE["login"];
+			$message = "Details Updated";
+			$query = "UPDATE Person SET  password = '$newpassword' WHERE username = '$username'";
+			echo "<script type='text/javascript'>alert('$message');</script>";
 
-	$name = $_POST["name"];
-	$newname = $_POST["newname"];
-	$password = $_POST["password"];
-	$newpassword = $_POST["newpassword"];
-	$confnewpassword = $_POST["confnewpassword"];
-	$username = $_POST["username"];
+
+		}
+		else
+		{
+			$message = "Could not update details. Log-in first.";
+			echo "<script type='text/javascript'>alert('$message');</script>";
+
+
+
+		}
+	}
+	else
+	{
+		$message = "Could not update details. Log-in first.";
+		echo "<script type='text/javascript'>alert('$message');</script>";
+
+	}
+
 	
-	$query = "UPDATE Person SET name = '$newname', password = '$newpassword' WHERE username = '$username'";
-
-	print true;
-
+	
 
 
 ?>
