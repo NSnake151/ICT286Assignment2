@@ -10,6 +10,7 @@
 	$query;
 	$result;
 	$message;
+	$isAdmin = 0;
 
 	$password = $_POST["password"];
 	$username = $_POST["username"];
@@ -23,6 +24,14 @@
 		if($row[2] == $username && $row[1] == $password)
 		{
 			$isValid = 1;
+
+			if($isValid == 1)
+			{
+				if($row[4] == 1)
+				{
+					$isAdmin = 1;
+				}
+			}
 			break;
 		}
 	}
@@ -30,9 +39,21 @@
 		//other scripts that rely on logged in should check this cookie's value
 	if($isValid == 1)
 	{
-		$message = "You have been logged in";
-		setcookie('login', '$username');
-		echo "<script type='text/javascript'>alert('$message');</script>";
+
+		if($isAdmin == 1)
+		{
+			$message = "Greetings cubicle filler. You are here forever.";
+			setcookie('login', 'admin');
+			echo "<script type='text/javascript'>alert('$message');</script>";
+
+		}
+		else
+		{
+			$message = "You have been logged in";
+			setcookie('login', '$username');
+			echo "<script type='text/javascript'>alert('$message');</script>";
+		}
+		
 
 	}
 	else

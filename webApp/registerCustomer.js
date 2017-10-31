@@ -18,5 +18,5 @@ function validateRegister()
 		return false;
 	}
 	
-	return false;
+	return true;
 }
