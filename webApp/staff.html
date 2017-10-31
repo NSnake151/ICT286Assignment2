@@ -1,0 +1,144 @@
+<?xml version = "1.0" encoding = "utf-8" ?>
+<!DOCTYPE html PUBLIC "-//w3c//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns = "http://www.w3.org/1999/xhtml">
+<head>
+ <link rel = "stylesheet"
+   type = "text/css"
+   href = "css/LoginStyle.css" />
+
+
+	<script type="text/javascript" src="staff.js">
+	</script>
+
+<title>Template</title>
+</head>
+<body>
+
+<div id="container">
+<div id="header">Splinter Sellers</div>
+<div id="body">
+	<nav>
+	<ul>
+		<li><a href="home.html">Home</a></li> 
+		<li><a href="products.html">Products</a></li>
+		<li><a href="about.html">About Us</a></li>
+		<li><a href="contact.html">Contact</a></li>
+		<li><a href="help.html">Help</a></li>
+		<li><a href="login.html">Login</a></li>
+		<li><a href="register.html">Register</a></li>
+		<li><a href="accDetails.html">Update Account</a></li>
+		<li><a href="staff.html">Staff</a></li>
+	</ul>
+	</nav>
+	
+	<form action="http://ceto.murdoch.edu.au/~31873958/submission2/Assignment2/viewPersons.php" />
+
+		<input type="submit" value="View Persons" />
+		<br />
+		
+
+	</form>
+		<!-- Will make the login html form ect and then format with css when we make it. -->
+
+	<p> Add a new person with the forms below </p> <br />
+	<form method="post" action="http://ceto.murdoch.edu.au/~31873958/submission2/Assignment2/staffAddPersons.php" onsubmit="return validateAddPerson();"/>
+	
+		<label> Name: <input type="text" id="name" name="name" /> </label>
+		<br />
+		<label> Password: <input type="text" id="password" name="password" /> </label>
+		<br />
+		<label> Username: <input type="text" id="username" name="username"> </label>
+		<br />
+		<label> Email: <input type="text" id="email" name="email" /> </label>
+		<br />
+		<label> IsAdmin: <input type="text" id="isadmin" name="isadmin" /> </label>
+		<br />
+	
+		<input type="submit" value="Add Person" />
+		<br />	
+
+	</form>
+
+	<p> Modify a persons details with the forms below </p> <br />
+	<form method="post" action="http://ceto.murdoch.edu.au/~31873958/submission2/Assignment2/staffModifyPersons.php" onsubmit="return validateModifyPerson();"/>
+
+		<label> Name: <input type="text" id="modname" name="modname" /> </label>
+		<br />
+		<label> Password: <input type="text" id="modpassword" name="modpassword" /> </label>
+		<br />
+		<label> Username: <input type="text" id="modusername" name="modusername"> </label>
+		<br />
+		<label> NewUsername: <input type="text" id="modnewusername" name="modnewusername"> </label>
+		<br />
+
+		<label> Email: <input type="text" id="modemail" name="modemail" /> </label>
+		<br />
+		<label> IsAdmin: <input type="text" id="modisadmin" name="modisadmin" /> </label>
+		<br />
+	
+		<input type="submit" value="Modify Person" />
+		<br />	
+
+	</form>
+
+	<p> Add a new product with the forms below </p> <br />
+	<form method="post" action="http://ceto.murdoch.edu.au/~31873958/submission2/Assignment2/staffAddProducts.php" onsubmit="return validateAddProduct();"/>
+		
+		<label> ISBN: <input type="text" id="isbn" name="isbn" /> </label>
+		<br />
+		<label> Title: <input type="text" id="title" name="title" /> </label>
+		<br />
+		<label> Description: <input type="text" id="description" name="description" /> </label>
+		<br />
+		<label> Publisher: <input type ="text" id="publisher" name="publisher" /> </label>
+		<br />
+		<label> Author: <input type="text" id="author" name="author" /> </label>
+		<br />
+		<label> Price: <input type="text" id="price" name="price" /> </label>
+		<br />
+		<label> Quantity: <input type="text" id="quantity" name="quantity" /> </label>
+		<br />
+		<input type="submit" value="Add Product" />
+
+	</form>
+
+
+	<p> Modify an existing product with the forms below </p> <br />
+	<form method="post" action="http://ceto.murdoch.edu.au/~31873958/submission2/Assignment2/staffModifyProducts.php" onsubmit="return validateModifyProduct();"/>
+		<label> ISBN: <input type="text" id="modisbn" name="isbn" /> </label>
+		<br />
+		<label> New ISBN: <input type="text" id="modnewisbn" name="newisbn" /> </label>
+		<br />
+		<label> Title: <input type="text" id="title" name="title" /> </label>
+		<br />
+		<label> Description: <input type="text" id="moddescription" name="description" /> </label>
+		<br />
+		<label> Publisher: <input type ="text" id="modpublisher" name="publisher" /> </label>
+		<br />
+		<label> Author: <input type="text" id="modauthor" name="author" /> </label>
+		<br />
+		<label> Price: <input type="text" id="modprice" name="price" /> </label>
+		<br />
+		<label> Quantity: <input type="text" id="modquantity" name="quantity" /> </label>
+		<br />
+		<input type="submit" value="Modify Product" />
+
+
+	</form>
+
+
+	
+	
+	
+</div>
+<div id="footer">
+	<h4 class="copyright">Copyright 2017 Splinter Sellers</h4>
+	<h4 class="design">Design by Chris and Michael</h4>
+</div>
+</div>​
+
+
+</body>
+</html>

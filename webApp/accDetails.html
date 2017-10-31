@@ -8,7 +8,7 @@
    type = "text/css"
    href = "css/LoginStyle.css" />
 
-<script type="text/javascript" src="login.js">
+<script type="text/javascript" src="changeAccDeets.js">
 	</script>
 
 
@@ -33,24 +33,19 @@
 	</ul>
 	</nav>
 	
-	<form method="post" action="http://ceto.murdoch.edu.au/~31873958/submission2/Assignment2/login.php" onsubmit="return validateLogin();">
+	<form method="post" action="http://ceto.murdoch.edu.au/~31873958/submission2/Assignment2/changeAccDeets.php" onsubmit="return updateDetails();">
 		
-		<label> UserName: <input type="text" id="username" name="username"/></label>
+		<label> New Password: <input type="password" id="password" name="password"/></label>
 		<br />
-		<label> Password: <input type="password" id="password" name="password"/></label>
+		<label> Confirm New Password: <input type="password" id="confpassword" name="confpassword"/></label>
 		<br />
 
-     		<input type="submit" value="Login"/>
-		
+
+
+     		<input type="submit" value="Update Details"/>
 
 		
         </form>
-
-	<form method="post" action="http://ceto.murdoch.edu.au/~31873958/submission2/Assignment2/logout.php" >
-
-		<input type="submit" value="logout" />
-	
-	</form>
 
 	<!-- Will make the login html form ect and then format with css when we make it. -->
 	
@@ -60,7 +55,7 @@
 	<h4 class="copyright">Copyright 2017 Splinter Sellers</h4>
 	<h4 class="design">Design by Chris and Michael</h4>
 </div>
-</div>​
+</div>
 
 
 </body>
