@@ -6,10 +6,10 @@
 <head>
  <link rel = "stylesheet"
    type = "text/css"
-   href = "css/OrderStyle.css" />
- <script type = "text/JavaScript" src = "bookOrder.js">
+   href = "css/ProductStyle.css" />
+ <script type = "text/JavaScript" src = "booksearch.js">
  </script>
-<title>Order</title>
+<title>Products</title>
 </head>
 <body>
 
@@ -31,25 +31,31 @@
 	</ul>
 	</nav>
 	
-
-	<form action="">
-   Enter an ISBN to add a book to order:
-	<input type = "text"  name = "isearch" 
-			onblur = "orderSearch(this.value)" size = "30" />
+	<div id="styleform"
 	
+	<form action="">
+	
+	<p id="p1">
+	<label>Enter a Title, or part of:<input type = "text"  name = "asearch" 
+			onblur = "searchBooks(this.value)" size = "30" /></label>
+	<p id="searchtxt"></p>
+	</p>
+	
+	<div class="btn-group">
+	 <input type = "button" class = "button" value = "Iguana Issuers" onclick = "searchCatagoryBooks(this.value)" />
+	 <input type = "button" class = "button" value = "Cicada Circulators" onclick = "searchCatagoryBooks(this.value)" />
+	 <input type = "button" class = "button" value = "Penguin Publishing" onclick = "searchCatagoryBooks(this.value)" />
+	</div>
 	
 	</form>
-	
-	Order:
-	<div id="curentOrder">
-
 	
 	</div>
 	
 
-	<th>
-	Total cost: <div id="curentTotal">0 </div>
-	</th>
+	<div id="bookholder">
+		
+	</div>
+	
 </div>
 <div id="footer">
 	<h4 class="copyright">Copyright 2017 Splinter Sellers</h4>

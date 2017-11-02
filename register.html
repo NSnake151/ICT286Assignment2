@@ -20,7 +20,8 @@
 	<nav>
 	<ul>
 		<li><a href="home.html">Home</a></li> 
-		<li><a href="Product.html">Products</a></li>
+		<li><a href="product.html">Products</a></li>
+		<li><a href="Order.html">Order</a></li>
 		<li><a href="about.html">About Us</a></li>
 		<li><a href="contact.html">Contact</a></li>
 		<li><a href="help.html">Help</a></li>
@@ -31,26 +32,34 @@
 	</ul>
 	</nav>
 	
-	<!-- Will make HTML form for registration then do css to make it look nice :) -->
+	<div id="styleform">
+	
 	<form method="post" action="http://ceto.murdoch.edu.au/~31873958/submission2/Assignment2/php/registerCustomer.php"  onsbumit="return validateRegister();">
-		<label> Name: <input type="text" id="name" name="name"/></label>
-		<br />
+	<p>
+		<label> Name: <input type="text" id="name" name="name" value="Name"/></label>
+	</p>
+	<p>
 		<label> Password: <input type="password" id="password" name="password"/></label>
-		<br />
+	</p>
+	<p>
 		<label> Confirm Password: <input type="password" id="confpassword" name="confpassword"/></label>
-		<br />
+	</p>
+	<p>
 		<label> UserName: <input type="text" id="username" name="username"/></label>
-		<br />
+	</p>
+	<p>
 		<label> Email: <input type="text" id="email" name="email"/></label>
-		<br />
-
+	</p>
+	<p>
 		 <input type="submit">
+	</p>
 		<!-- <input type="button" onclick="registerCustomer()" value="Register"/> -->
 		
             
 
 		
         </form>
+		</div>
 
 	
 </div>

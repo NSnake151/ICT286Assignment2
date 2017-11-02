@@ -6,9 +6,9 @@
 <head>
  <link rel = "stylesheet"
    type = "text/css"
-   href = "css/LoginStyle.css" />
+   href = "css/AccountStyle.css" />
 
-<script type="text/javascript" src="js/changeAccDeets.js">
+<script type="text/javascript" src="changeAccDeets.js">
 	</script>
 
 
@@ -22,7 +22,8 @@
 	<nav>
 	<ul>
 		<li><a href="home.html">Home</a></li> 
-		<li><a href="Product.html">Products</a></li>
+		<li><a href="product.html">Products</a></li>
+		<li><a href="Order.html">Order</a></li>
 		<li><a href="about.html">About Us</a></li>
 		<li><a href="contact.html">Contact</a></li>
 		<li><a href="help.html">Help</a></li>
@@ -33,21 +34,25 @@
 	</ul>
 	</nav>
 	
+	<div id="styleform">
+	
 	<form method="post" action="http://ceto.murdoch.edu.au/~31873958/submission2/Assignment2/php/changeAccDeets.php" onsubmit="return updateDetails();">
-		
+		<p>
 		<label> New Password: <input type="password" id="password" name="password"/></label>
-		<br />
+		</p>
+		<p>
 		<label> Confirm New Password: <input type="password" id="confpassword" name="confpassword"/></label>
-		<br />
-
+		</p>
+		<p>
 
 
      		<input type="submit" value="Update Details"/>
+		</p>
 
 		
         </form>
+		</div>
 
-	<!-- Will make the login html form ect and then format with css when we make it. -->
 	
 	
 </div>
