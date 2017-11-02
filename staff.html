@@ -6,7 +6,7 @@
 <head>
  <link rel = "stylesheet"
    type = "text/css"
-   href = "css/LoginStyle.css" />
+   href = "css/StaffStyle.css" />
 
 
 	<script type="text/javascript" src="js/staff.js">
@@ -22,7 +22,8 @@
 	<nav>
 	<ul>
 		<li><a href="home.html">Home</a></li> 
-		<li><a href="Product.html">Products</a></li>
+		<li><a href="product.html">Products</a></li>
+		<li><a href="Order.html">Order</a></li>
 		<li><a href="about.html">About Us</a></li>
 		<li><a href="contact.html">Contact</a></li>
 		<li><a href="help.html">Help</a></li>
@@ -33,6 +34,7 @@
 	</ul>
 	</nav>
 	
+	
 	<form action="http://ceto.murdoch.edu.au/~31873958/submission2/Assignment2/php/viewPersons.php" />
 
 		<input type="submit" value="View Persons" />
@@ -40,97 +42,126 @@
 		
 
 	</form>
-		<!-- Will make the login html form ect and then format with css when we make it. -->
+	
+	<div id="styleform">
 
-	<p> Add a new person with the forms below </p> <br />
+	<p> Add a new person with the forms below </p>
 	<form method="post" action="http://ceto.murdoch.edu.au/~31873958/submission2/Assignment2/staffAddPersons.php" onsubmit="return validateAddPerson();"/>
-	
+		<p>
 		<label> Name: <input type="text" id="name" name="name" /> </label>
-		<br />
+		</p>
+		<p>
 		<label> Password: <input type="text" id="password" name="password" /> </label>
-		<br />
+		</p>
+		<p>
 		<label> Username: <input type="text" id="username" name="username"> </label>
-		<br />
+		</p>
+		<p>
 		<label> Email: <input type="text" id="email" name="email" /> </label>
-		<br />
+		</p>
+		<p>
 		<label> IsAdmin: <input type="text" id="isadmin" name="isadmin" /> </label>
-		<br />
-	
+		<p>
 		<input type="submit" value="Add Person" />
-		<br />	
-
+		</p>
 	</form>
+	
+	</div>
 
-	<p> Modify a persons details with the forms below </p> <br />
+	<div id="styleform">
+	
+	<p> Modify a persons details with the forms below </p>
 	<form method="post" action="http://ceto.murdoch.edu.au/~31873958/submission2/Assignment2/staffModifyPersons.php" onsubmit="return validateModifyPerson();"/>
-
+		<p>
 		<label> Name: <input type="text" id="modname" name="modname" /> </label>
-		<br />
+		</p>
+		<p>
 		<label> Password: <input type="text" id="modpassword" name="modpassword" /> </label>
-		<br />
+		</p>
+		<p>
 		<label> Username: <input type="text" id="modusername" name="modusername"> </label>
-		<br />
+		</p>
+		<p>
 		<label> NewUsername: <input type="text" id="modnewusername" name="modnewusername"> </label>
-		<br />
-
+		</p>
+		<p>
 		<label> Email: <input type="text" id="modemail" name="modemail" /> </label>
-		<br />
+		</p>
+		<p>
 		<label> IsAdmin: <input type="text" id="modisadmin" name="modisadmin" /> </label>
-		<br />
+		</p>
+		<p>
 	
 		<input type="submit" value="Modify Person" />
-		<br />	
 
 	</form>
+	</div>
+	
+	<div id="styleform">
 
-	<p> Add a new product with the forms below </p> <br />
+	<p> Add a new product with the forms below </p>
 	<form method="post" action="http://ceto.murdoch.edu.au/~31873958/submission2/Assignment2/staffAddProducts.php" onsubmit="return validateAddProduct();"/>
-		
+		<p>
 		<label> ISBN: <input type="text" id="isbn" name="isbn" /> </label>
-		<br />
+		</p>
+		<p>
 		<label> Title: <input type="text" id="title" name="title" /> </label>
-		<br />
+		</p>
+		<p>
 		<label> Description: <input type="text" id="description" name="description" /> </label>
-		<br />
+		</p>
+		<p>
 		<label> Publisher: <input type ="text" id="publisher" name="publisher" /> </label>
-		<br />
+		</p>
+		<p>
 		<label> Author: <input type="text" id="author" name="author" /> </label>
-		<br />
+		</p>
+		<p>
 		<label> Price: <input type="text" id="price" name="price" /> </label>
-		<br />
+		</p>
+		<p>
 		<label> Quantity: <input type="text" id="quantity" name="quantity" /> </label>
-		<br />
+		</p>
+		<p>
 		<input type="submit" value="Add Product" />
 
 	</form>
+	
+	</div>
+	
+	<div id="styleform">
 
-
-	<p> Modify an existing product with the forms below </p> <br />
+	<p> Modify an existing product with the forms below </p>
 	<form method="post" action="http://ceto.murdoch.edu.au/~31873958/submission2/Assignment2/staffModifyProducts.php" onsubmit="return validateModifyProduct();"/>
 		<label> ISBN: <input type="text" id="modisbn" name="isbn" /> </label>
-		<br />
+		<p>
 		<label> New ISBN: <input type="text" id="modnewisbn" name="newisbn" /> </label>
-		<br />
+		</p>
+		<p>
 		<label> Title: <input type="text" id="title" name="title" /> </label>
-		<br />
+		</p>
+		<p>
 		<label> Description: <input type="text" id="moddescription" name="description" /> </label>
-		<br />
+		</p>
+		<p>
 		<label> Publisher: <input type ="text" id="modpublisher" name="publisher" /> </label>
-		<br />
+		</p>
+		<p>
 		<label> Author: <input type="text" id="modauthor" name="author" /> </label>
-		<br />
+		</p>
+		<p>
 		<label> Price: <input type="text" id="modprice" name="price" /> </label>
-		<br />
+		</p>
+		<p>
 		<label> Quantity: <input type="text" id="modquantity" name="quantity" /> </label>
-		<br />
+		</p>
+		<p>
 		<input type="submit" value="Modify Product" />
 
 
 	</form>
-
-
 	
-	
+	</div>
 	
 </div>
 <div id="footer">

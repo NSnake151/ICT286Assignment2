@@ -10,13 +10,13 @@ if (!$con) {
 
 $sql="SELECT * FROM Textbook WHERE isbn = '".$q."'";
 $result = mysqli_query($con,$sql);
+
 $result1 = mysqli_query($con,$sql);
 $quant = mysqli_fetch_array($result1);
 
 if ($result != "" && $quant['quantity'] > 0)
 {
 	mysqli_query($con,"UPDATE Textbook SET quantity = quantity - 1 WHERE isbn = '$q'");
-
 
 echo "<table>
 <tr>

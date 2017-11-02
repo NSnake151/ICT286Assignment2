@@ -1,7 +1,6 @@
 function orderSearch(str) {
 		
-	
-	window.alert("1");
+
 	if (str == "") {
         alert("ISBN MUST NOT BE EMPTY");
         return;

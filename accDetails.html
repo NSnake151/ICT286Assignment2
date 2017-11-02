@@ -6,10 +6,13 @@
 <head>
  <link rel = "stylesheet"
    type = "text/css"
-   href = "css/ProductStyle.css" />
- <script type = "text/JavaScript" src = "js/bookOrder.js">
- </script>
-<title>Order</title>
+   href = "css/AccountStyle.css" />
+
+<script type="text/javascript" src="changeAccDeets.js">
+	</script>
+
+
+<title>Template</title>
 </head>
 <body>
 
@@ -19,41 +22,45 @@
 	<nav>
 	<ul>
 		<li><a href="home.html">Home</a></li> 
-		<li><a href="Product.html">Products</a></li>
+		<li><a href="product.html">Products</a></li>
+		<li><a href="Order.html">Order</a></li>
 		<li><a href="about.html">About Us</a></li>
 		<li><a href="contact.html">Contact</a></li>
 		<li><a href="help.html">Help</a></li>
 		<li><a href="login.html">Login</a></li>
 		<li><a href="register.html">Register</a></li>
+		<li><a href="accDetails.html">Update Account</a></li>
+		<li><a href="staff.html">Staff</a></li>
 	</ul>
 	</nav>
 	
+	<div id="styleform">
+	
+	<form method="post" action="http://ceto.murdoch.edu.au/~31873958/submission2/Assignment2/php/changeAccDeets.php" onsubmit="return updateDetails();">
+		<p>
+		<label> New Password: <input type="password" id="password" name="password"/></label>
+		</p>
+		<p>
+		<label> Confirm New Password: <input type="password" id="confpassword" name="confpassword"/></label>
+		</p>
+		<p>
 
-	<form action="">
-   Enter an ISBN to add a book to order:
-	<input type = "text"  name = "isearch" 
-			onblur = "orderSearch(this.value)" size = "30" />
-	
-	
-	</form>
-	
-	Order:
-	<div id="curentOrder">
+
+     		<input type="submit" value="Update Details"/>
+		</p>
+
+		
+        </form>
+		</div>
 
 	
-	</div>
-	
-	Total cost:
-	<div id="curentTotal">
-	0
-	</div>
 	
 </div>
 <div id="footer">
 	<h4 class="copyright">Copyright 2017 Splinter Sellers</h4>
 	<h4 class="design">Design by Chris and Michael</h4>
 </div>
-</div>​
+</div>
 
 
 </body>

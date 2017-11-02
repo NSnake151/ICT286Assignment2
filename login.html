@@ -6,11 +6,13 @@
 <head>
  <link rel = "stylesheet"
    type = "text/css"
-   href = "css/RegisterStyle.css" />
+   href = "css/LoginStyle.css" />
+
+<script type="text/javascript" src="login.js">
+	</script>
+
 
 <title>Template</title>
-<script type="text/javascript" src="js/registerCustomer.js">
-	</script>
 </head>
 <body>
 
@@ -20,7 +22,8 @@
 	<nav>
 	<ul>
 		<li><a href="home.html">Home</a></li> 
-		<li><a href="Product.html">Products</a></li>
+		<li><a href="product.html">Products</a></li>
+		<li><a href="Order.html">Order</a></li>
 		<li><a href="about.html">About Us</a></li>
 		<li><a href="contact.html">Contact</a></li>
 		<li><a href="help.html">Help</a></li>
@@ -31,27 +34,33 @@
 	</ul>
 	</nav>
 	
-	<!-- Will make HTML form for registration then do css to make it look nice :) -->
-	<form method="post" action="http://ceto.murdoch.edu.au/~31873958/submission2/Assignment2/php/registerCustomer.php"  onsbumit="return validateRegister();">
-		<label> Name: <input type="text" id="name" name="name" value="Name"/></label>
-		<br />
-		<label> Password: <input type="password" id="password" name="password"/></label>
-		<br />
-		<label> Confirm Password: <input type="password" id="confpassword" name="confpassword"/></label>
-		<br />
+	<div id="styleform">
+	
+	<form method="post" action="http://ceto.murdoch.edu.au/~31873958/submission2/Assignment2/php/login.php" onsubmit="return validateLogin();">
+		<p>
 		<label> UserName: <input type="text" id="username" name="username"/></label>
-		<br />
-		<label> Email: <input type="text" id="email" name="email"/></label>
-		<br />
-
-		 <input type="submit">
-		<!-- <input type="button" onclick="registerCustomer()" value="Register"/> -->
+		</p>
+		<p>
+		<label> Password: <input type="password" id="password" name="password"/></label>
+		</p>
+		<p>
+     		<input type="submit" value="Login"/>
+		</p>
 		
-            
 
 		
         </form>
+	</div>
+	<div id="styleform">
 
+	<form method="post" action="http://ceto.murdoch.edu.au/~31873958/submission2/Assignment2/logout.php" >
+		<p>
+		<input type="submit" value="logout" />
+		</p>
+	</form>
+	</div>
+
+	
 	
 </div>
 <div id="footer">
