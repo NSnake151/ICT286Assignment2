@@ -10,7 +10,6 @@ function searchBooks(str) {
   xhr.onreadystatechange = function () {
 	if (xhr.readyState == 4 && xhr.status == 200) {
 		
-		window.alert("hello"+ str + " " + xhr.responseText);
         document.getElementById("bookholder").innerHTML = xhr.responseText;
     }
   };
