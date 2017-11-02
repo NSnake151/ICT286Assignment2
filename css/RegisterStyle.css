@@ -42,11 +42,11 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: #263240;
-    top: 200;
+    top: 200px;
     width: 100%;
 }
 
-li:nth-of-type(6) {
+li:nth-of-type(8) {
 	float: right;
 }
 
@@ -84,3 +84,27 @@ h3 {
 .design {
     float: right;
 }
+
+p
+{
+    text-align:center;
+       	   }
+		   
+.styleform
+{
+	border: 5px solid;
+}
+
+		   
+		   
+.styleform label
+{
+    float:left;
+    width: 40%;
+    text-align:right;
+    }
+.styleform input
+{
+    float:left;
+    width: 30%;
+    }

@@ -42,11 +42,11 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: #263240;
-    top: 200;
+    top: 200px;
     width: 100%;
 }
 
-li:nth-of-type(6) {
+li:nth-of-type(8) {
 	float: right;
 }
 
@@ -83,4 +83,64 @@ h3 {
 
 .design {
     float: right;
+}
+
+
+#p1
+{
+    text-align:center;
+       	   }
+		   
+.styleform
+{
+	border: 5px solid;
+}
+
+		   
+		   
+.styleform label
+{
+    float:left;
+    width: 40%;
+    text-align:right;
+    }
+.styleform input
+{
+    float:left;
+    width: 30%;
+    }
+	
+	
+	
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.btn-group .button {
+    background-color: #263240; 
+    border: 1px solid #263240;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    width: 200px;
+    display: block;
+}
+
+.btn-group .button:not(:last-child) {
+    border-bottom: none;
+}
+
+.btn-group .button:hover {
+    background-color: #3e8e41;
 }

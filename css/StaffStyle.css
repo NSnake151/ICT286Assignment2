@@ -1,8 +1,9 @@
 #body {
-    background-color: #263240;
+    background-color: white;
 	height: 100%;
     width: 100%;
 }
+
 
 #header{
 	font-size: 35px;
@@ -23,6 +24,8 @@
     background-color: #263240;
     text-align: center;
 	width: 97%;
+	position: fixed;
+	bottom: 0;
 	margin: auto;
     overflow: hidden;
 }
@@ -31,22 +34,9 @@
 #container {
     height: 100%;
     width: 100%;
-    background-color: #263240;
-}
-
-
-div.gallery {
-	background-color: #263240;
-	float: left;
-    margin: 10px;
-    width: auto;
-	height: auto;
-}
-
-
-div.gallery img {
-    width: 500px;
-    height: 400px;
+    background: white;
+    position: absolute;
+	text-align: center;
 }
 
 
@@ -98,3 +88,27 @@ h3 {
 .design {
     float: right;
 }
+
+p
+{
+    text-align:center;
+       	   }
+		   
+.styleform
+{
+	border: 5px solid;
+}
+
+		   
+		   
+.styleform label
+{
+    float:left;
+    width: 40%;
+    text-align:right;
+    }
+.styleform input
+{
+    float:left;
+    width: 30%;
+    }

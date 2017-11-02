@@ -65,11 +65,11 @@ ul.a {
     padding: 0;
     overflow: hidden;
     background-color: #263240;
-    top: 200;
+    top: 200px;
     width: 100%;
 }
 
-li.a:nth-of-type(6) {
+li.a:nth-of-type(8) {
 	float: right;
 }
 
