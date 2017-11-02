@@ -18,16 +18,16 @@
 
 
 #footer {
-	font-size: 18px;
-    padding: 1em;
+	font-size: 10px;
+    padding: 0px;
     color: white;
     background-color: #263240;
     text-align: center;
-	width: 97%;
-	position: fixed;
+	position: absolute;
 	bottom: 0;
-	margin: auto;
     overflow: hidden;
+	height: 6%;
+	width: 99%;
 }
 
 
@@ -35,7 +35,7 @@
     height: 100%;
     width: 100%;
     background: white;
-    position: absolute;
+    position: relative;
 	text-align: center;
 }
 
@@ -112,3 +112,4 @@ p
     float:left;
     width: 30%;
     }
+
