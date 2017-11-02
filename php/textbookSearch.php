@@ -1,6 +1,8 @@
 <?php
 
-$q = $_GET['q'];
+$q = htmlspecialchars($_GET['q']);
+
+
 
 $con = mysqli_connect('localhost','X31873958','DayOneIsH2020', 'X31873958');
 if (!$con) {
