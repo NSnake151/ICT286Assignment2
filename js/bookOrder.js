@@ -8,7 +8,7 @@ function orderSearch(str) {
 	else
 	{
 		var xhr = new XMLHttpRequest();
-		xhr.open("GET", "textbookOrder.php?q=" + str);
+		xhr.open("GET", "http://ceto.murdoch.edu.au/~31873958/submission2/Assignment2/php/textbookOrder.php?q=" + str);
   
 		xhr.onreadystatechange = function () {
 			if (xhr.readyState == 4 && xhr.status == 200) {
@@ -31,7 +31,7 @@ function orderSearch(str) {
 function orderPrice(str) {
 	
 		var xhr = new XMLHttpRequest();
-		xhr.open("GET", "textbookPrice.php?q=" + str);
+		xhr.open("GET", "http://ceto.murdoch.edu.au/~31873958/submission2/Assignment2/php/textbookPrice.php?q=" + str);
   
 		xhr.onreadystatechange = function () {
 			if (xhr.readyState == 4 && xhr.status == 200) {
