@@ -7,7 +7,7 @@
  <link rel = "stylesheet"
    type = "text/css"
    href = "css/ProductStyle.css" />
- <script type = "text/JavaScript" src = "booksearch.js">
+ <script type = "text/JavaScript" src = "js/booksearch.js">
  </script>
 <title>Products</title>
 </head>
@@ -19,27 +19,20 @@
 	<nav>
 	<ul>
 		<li><a href="home.html">Home</a></li> 
-		<li><a href="product.html">Products</a></li>
-		<li><a href="Order.html">Order</a></li>
+		<li><a href="Product.html">Products</a></li>
 		<li><a href="about.html">About Us</a></li>
 		<li><a href="contact.html">Contact</a></li>
 		<li><a href="help.html">Help</a></li>
 		<li><a href="login.html">Login</a></li>
 		<li><a href="register.html">Register</a></li>
-		<li><a href="accDetails.html">Update Account</a></li>
-		<li><a href="staff.html">Staff</a></li>
 	</ul>
 	</nav>
 	
-	<div id="styleform"
-	
+
 	<form action="">
-	
-	<p id="p1">
-	<label>Enter a Title, or part of:<input type = "text"  name = "asearch" 
-			onblur = "searchBooks(this.value)" size = "30" /></label>
-	<p id="searchtxt"></p>
-	</p>
+   Search by title:
+	<input type = "text"  name = "asearch" 
+			onblur = "searchBooks(this.value)" size = "30" />
 	
 	<div class="btn-group">
 	 <input type = "button" class = "button" value = "Iguana Issuers" onclick = "searchCatagoryBooks(this.value)" />
@@ -49,13 +42,12 @@
 	
 	</form>
 	
-	</div>
+	<p id="searchtxt"></p>
 	
-
+	
 	<div id="bookholder">
 		
 	</div>
-	
 </div>
 <div id="footer">
 	<h4 class="copyright">Copyright 2017 Splinter Sellers</h4>

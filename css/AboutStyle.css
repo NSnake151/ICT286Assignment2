@@ -52,11 +52,11 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: #263240;
-    top: 200px;
+    top: 200;
     width: 100%;
 }
 
-li:nth-of-type(8) {
+li:nth-of-type(6) {
 	float: right;
 }
 
